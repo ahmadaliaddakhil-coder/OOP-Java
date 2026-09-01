@@ -1,18 +1,66 @@
-## Getting Started
+# OOP Praktikum
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Repository ini berisi contoh kode Java untuk materi Praktikum Pemrograman Berorientasi Objek.
 
-## Folder Structure
+## Struktur Folder
 
-The workspace contains two folders by default, where:
+```text
+src/
+└── oop/
+    ├── Main.java
+    ├── pengenalan/
+    │   └── HelloWorld.java
+    ├── dasarpemrograman/
+    │   └── DasarPemrogramanDemo.java
+    ├── array/
+    │   └── ArrayDemo.java
+    ├── kelas/
+    │   ├── Mahasiswa.java
+    │   └── MainKelas.java
+    ├── enkapsulasi/
+    │   ├── Animal.java
+    │   └── MainEnkapsulasi.java
+    ├── inheritance/
+    │   ├── Hewan.java
+    │   ├── Kucing.java
+    │   └── MainInheritance.java
+    ├── polymorphism/
+    │   ├── Hewan.java
+    │   ├── Kucing.java
+    │   ├── Anjing.java
+    │   └── MainPolymorphism.java
+    ├── exception/
+    │   └── ExceptionDemo.java
+    ├── collection/
+    │   └── CollectionDemo.java
+    └── legacy/
+        └── tempCodeRunnerFile.java.txt
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+File Java lama tetap dipertahankan di `src/` dan subfolder lamanya. File sementara `tempCodeRunnerFile.java` diarsipkan menjadi `.txt` karena isinya bukan kode Java valid.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Cara Menjalankan
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Compile semua file Java:
 
-## Dependency Management
+```powershell
+javac -d bin (Get-ChildItem -Recurse src -Filter *.java | ForEach-Object FullName)
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Jalankan semua demo materi baru:
+
+```powershell
+java -cp bin oop.Main
+```
+
+Jalankan materi tertentu:
+
+```powershell
+java -cp bin oop.pengenalan.HelloWorld
+java -cp bin oop.kelas.MainKelas
+java -cp bin oop.enkapsulasi.MainEnkapsulasi
+java -cp bin oop.inheritance.MainInheritance
+java -cp bin oop.polymorphism.MainPolymorphism
+java -cp bin oop.collection.CollectionDemo
+java -cp bin oop.exception.ExceptionDemo
+```
