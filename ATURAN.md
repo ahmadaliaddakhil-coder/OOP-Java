@@ -1,6 +1,6 @@
 # Aturan Kolaborasi Kelompok - Tugas OOP (Java)
 
-Kelompok: lupa kelompok berapa
+Kelompok: (isi nama kalian bertiga)
 Repo: GitHub
 
 ---
